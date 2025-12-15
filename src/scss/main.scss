@@ -1,5 +1,8 @@
 @charset 'utf-8';
 
+// Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Inter:wght@400;500;600;700;900&family=Roboto+Mono:wght@400;500;600;700&display=swap');
+
 // Abstracts
 @import 'abstracts/variables';
 @import 'abstracts/mixins';
@@ -18,9 +21,11 @@
 @import 'layout/grid';
 
 // Components
+@import 'components/promo-banner';
 @import 'components/buttons';
 @import 'components/cards';
 @import 'components/slider';
+@import 'components/scroll-to-top';
 
 // Pages
 @import 'pages/home';

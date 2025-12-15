@@ -1,8 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
-
 body {
     font-family: $body-font-family;
-    color: $dark-gray;
+    color: $black;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -12,7 +10,11 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: $header-font-family;
+    font-family: $body-font-family;
     font-weight: 700;
     color: $black;
+}
+
+p, li, a, span, div {
+    font-family: $body-font-family;
 }

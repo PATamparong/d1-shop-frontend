@@ -1,4 +1,5 @@
-.main-carousel {
+.main-carousel,
+.testimonial-cards-carousel {
     .carousel-cell {
         width: 33.333%;
         /* 3 cards visible on desktop */
@@ -24,6 +25,50 @@
             &.is-selected {
                 background: $primary-color;
             }
+        }
+    }
+
+    /* Flickity buttons */
+    .flickity-button {
+        background: rgba(255, 255, 255, 0.9);
+        color: $primary-color;
+
+        &:hover {
+            background: white;
+        }
+
+        &:disabled {
+            opacity: 0.3;
+        }
+    }
+}
+
+/* Testimonial cards carousel specific styles */
+.testimonial-cards-carousel {
+    margin: 2rem 0;
+
+    .carousel-cell {
+        width: 33.333%;
+        /* 3 cards visible on desktop */
+
+        @include breakpoint(small only) {
+            width: 90%;
+        }
+
+        @include breakpoint(medium only) {
+            width: 50%;
+        }
+    }
+
+    .testimonial-card {
+        margin: 0 0.5rem;
+    }
+
+    @media screen and (max-width: 639px) {
+        margin: 1rem 0;
+
+        .carousel-cell {
+            padding: 0 0.5rem;
         }
     }
 }
