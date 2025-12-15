@@ -9,6 +9,7 @@ const handlebarsPlugin = () => {
         transformIndexHtml: {
             order: 'pre',
             handler: (html) => {
+                // Register partials from components directory
                 const componentDir = resolve(__dirname, 'src/components');
                 if (fs.existsSync(componentDir)) {
                     const files = fs.readdirSync(componentDir);
@@ -20,6 +21,33 @@ const handlebarsPlugin = () => {
                         }
                     });
                 }
+
+                // Register partials from sections directory
+                const sectionsDir = resolve(__dirname, 'src/sections');
+                if (fs.existsSync(sectionsDir)) {
+                    const files = fs.readdirSync(sectionsDir);
+                    files.forEach((file) => {
+                        if (file.endsWith('.html')) {
+                            const name = file.replace('.html', '');
+                            const content = fs.readFileSync(resolve(sectionsDir, file), 'utf-8');
+                            Handlebars.registerPartial(name, content);
+                        }
+                    });
+                }
+
+                // Register partials from pages directory
+                const pagesDir = resolve(__dirname, 'src/pages');
+                if (fs.existsSync(pagesDir)) {
+                    const files = fs.readdirSync(pagesDir);
+                    files.forEach((file) => {
+                        if (file.endsWith('.html')) {
+                            const name = file.replace('.html', '');
+                            const content = fs.readFileSync(resolve(pagesDir, file), 'utf-8');
+                            Handlebars.registerPartial(name, content);
+                        }
+                    });
+                }
+
                 const template = Handlebars.compile(html);
                 return template({});
             },
