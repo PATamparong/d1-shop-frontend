@@ -1,0 +1,46 @@
+.site-footer {
+    background-color: $secondary-color;
+    padding: 4rem 0;
+    margin-top: 4rem;
+
+    h5 {
+        margin-bottom: 1.5rem;
+        font-size: 1.25rem;
+    }
+
+    ul.no-bullet {
+        li {
+            margin-bottom: 0.5rem;
+
+            a {
+                color: $dark-gray;
+
+                &:hover {
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+
+    .input-group {
+        margin-top: 1rem;
+
+        .input-group-field {
+            border: 1px solid $white;
+            background: $white;
+            height: auto;
+            padding: 1rem;
+        }
+
+        .button {
+            padding: 1rem;
+            margin: 0;
+            background: $black;
+            color: $white;
+
+            &:hover {
+                background: $primary-color;
+            }
+        }
+    }
+}

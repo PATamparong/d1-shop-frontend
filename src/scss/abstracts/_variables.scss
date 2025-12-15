@@ -1,0 +1,25 @@
+// Colors
+$primary-color: #d4a373; // Soft Earthy Tone
+$secondary-color: #faedcd; // Cream
+$alert-color: #cc4b37;
+$success-color: #3adb76;
+$warning-color: #ffae00;
+$dark-gray: #333333;
+$light-gray: #e6e6e6;
+$white: #ffffff;
+$black: #0a0a0a;
+
+// Typography
+$body-font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+$header-font-family: 'Playfair Display', serif; // Premium feel
+
+// Foundation Overrides
+$foundation-palette: (
+    primary: $primary-color,
+    secondary: $secondary-color,
+    success: $success-color,
+    warning: $warning-color,
+    alert: $alert-color,
+);
+
+$global-radius: 0; // Sharp edges for premium look
