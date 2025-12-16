@@ -1,0 +1,29 @@
+.main-carousel {
+    .carousel-cell {
+        width: 33.333%;
+        /* 3 cards visible on desktop */
+        padding: 0 1rem;
+
+        @include breakpoint(small only) {
+            width: 100%;
+        }
+
+        @include breakpoint(medium only) {
+            width: 50%;
+        }
+    }
+
+    /* Flickity dots */
+    .flickity-page-dots {
+        bottom: -2rem;
+
+        .dot {
+            background: $light-gray;
+            opacity: 1;
+
+            &.is-selected {
+                background: $primary-color;
+            }
+        }
+    }
+}

@@ -1,0 +1,26 @@
+@charset 'utf-8';
+
+// Abstracts
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+
+// Foundation
+@import 'foundation-sites/scss/foundation';
+@include foundation-everything;
+
+// Base
+@import 'base/reset';
+@import 'base/typography';
+
+// Layout
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/grid';
+
+// Components
+@import 'components/buttons';
+@import 'components/cards';
+@import 'components/slider';
+
+// Pages
+@import 'pages/home';
