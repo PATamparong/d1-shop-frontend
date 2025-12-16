@@ -1,4 +1,4 @@
-# D1 Shop Frontend
+# Beauty Shop Frontend
 
 A fully responsive, modern e-commerce homepage for a beauty/skincare shop, built with Foundation Sites, SCSS, and modular JavaScript.
 
@@ -26,7 +26,7 @@ A fully responsive, modern e-commerce homepage for a beauty/skincare shop, built
 ## Project Structure
 
 ```
-d1-shop-frontend/
+beauty-shop-frontend/
 ├── src/
 │   ├── assets/
 │   │   ├── js/
@@ -78,7 +78,7 @@ d1-shop-frontend/
 1. **Clone the repository:**
    ```bash
    git clone <repository-url>
-   cd d1-shop-frontend
+   cd beauty-shop-frontend
    ```
 
 2. **Install dependencies:**
