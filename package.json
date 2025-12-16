@@ -1,5 +1,5 @@
 {
-  "name": "beauty-shop-frontend",
+  "name": "d1-shop-frontend",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "D1 Men's Skincare Shop Frontend",
   "dependencies": {
     "flickity": "^3.0.0",
     "foundation-sites": "^6.9.0",

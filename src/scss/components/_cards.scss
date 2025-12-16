@@ -1,34 +1,113 @@
 .card {
     border: none;
-    background: transparent;
-    transition: transform 0.3s ease;
+    background: $white;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba($black, 0.08);
 
     &:hover {
-        transform: translateY(-5px);
+        transform: translateY(-8px);
+        box-shadow: 0 8px 24px rgba($black, 0.15);
     }
 
-    .card-image-placeholder {
-        height: 300px;
-        background-color: $light-gray;
-        margin-bottom: 1rem;
-        background-size: cover;
-        background-position: center;
-        background-image: url('https://images.unsplash.com/photo-1620916566398-39f1143ab7be?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80');
+    .card-image-container {
+        height: 350px;
+        background-color: #f5f5f5;
+        margin-bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        padding: 2rem;
+
+        img {
+            max-height: 100%;
+            max-width: 100%;
+            object-fit: contain;
+        }
     }
 
     .card-section {
-        padding: 0;
+        padding: 1.5rem;
         text-align: center;
 
-        h4 {
-            font-size: 1.25rem;
+        .rating {
             margin-bottom: 0.5rem;
+
+            img {
+                height: 16px;
+            }
+        }
+
+        h4 {
+            font-size: 1.1rem;
+            margin-bottom: 0.75rem;
+            font-weight: 700;
+            color: $dark-gray;
         }
 
         p {
             color: $primary-color;
             font-weight: 700;
             margin-bottom: 1rem;
+            font-size: 1.2rem;
         }
+
+        .button {
+            background-color: $black;
+            color: $white;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 0.05em;
+            padding: 0.85rem 1.5rem;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+
+            &:hover {
+                background-color: $primary-color;
+                color: $black;
+            }
+        }
+    }
+}
+
+// Feature cards (circular icon cards)
+.feature-card {
+    text-align: center;
+    padding: 2rem 1rem;
+
+    .icon-circle {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin: 0 auto 1.5rem;
+        background-color: $light-gray;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    h5 {
+        font-size: 1rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+        color: $dark-gray;
+        letter-spacing: 0.05em;
+    }
+
+    p {
+        font-size: 0.85rem;
+        color: lighten($dark-gray, 20%);
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
     }
 }
