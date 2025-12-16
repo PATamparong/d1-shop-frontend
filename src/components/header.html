@@ -1,26 +1,31 @@
 <header class="site-header" data-sticky-container>
     <div class="sticky" data-sticky data-options="marginTop:0;">
-        <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
-            <button class="menu-icon" type="button" data-toggle="example-menu"></button>
-            <div class="title-bar-title">Beauty Shop</div>
-        </div>
-
-        <div class="top-bar" id="example-menu">
+        <div class="top-bar">
             <div class="top-bar-left">
-                <ul class="dropdown menu" data-dropdown-menu>
-                    <li class="menu-text show-for-medium">Beauty Shop</li>
-                    <li><a href="#">Skincare</a></li>
-                    <li><a href="#">Makeup</a></li>
-                    <li><a href="#">Fragrance</a></li>
-                </ul>
+                <button class="menu-icon" type="button" data-toggle="mobile-menu"></button>
+                <img src="/src/assets/icons/Logo.svg" alt="D1" class="logo">
             </div>
             <div class="top-bar-right">
-                <ul class="menu">
-                    <li><input type="search" placeholder="Search"></li>
-                    <li><button type="button" class="button">Search</button></li>
-                    <li><a href="#" class="cart-icon">Cart (0)</a></li>
+                <ul class="menu align-middle">
+                    <li><a href="#get-started" class="button">GET STARTED</a></li>
+                    <li>
+                        <a href="#" class="cart-icon">
+                            <img src="src/assets/images/Bitmap.png" alt="Cart">
+                            <span id="cart-count" class="badge">0</span>
+                        </a>
+                    </li>
                 </ul>
             </div>
+        </div>
+
+        <div class="mobile-menu" id="mobile-menu" data-toggler data-animate="slide-in-down slide-out-up">
+            <ul class="vertical menu">
+                <li><a href="#routine">Routine</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#results">Results</a></li>
+                <li><a href="#ingredients">Ingredients</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+            </ul>
         </div>
     </div>
 </header>
